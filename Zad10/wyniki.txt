@@ -1,0 +1,17 @@
+I/O
+Wersja synchroniczna(jeden po drugim) -  160 stron w przeciągu 16.705066680908203 sekund
+Wersja asynchroniczna(na pięciu wątkach) -  160 stron w przeciągu 5.242202043533325 sekund
+Wersja asynchroniczna(z użyciem biblioteki Asyncio oraz słów kluczowych await oraz async) - 160 stron w przeciągu 0.5485837459564209 sekund
+Wersja asynchroniczna(z wykorzystaniem procesorów komputera) -  160 stron w przeciągu 8.758083820343018 sekund
+Wersja z wykorzystaniem procesorów może nie jest najszybsza co spowodowane jest koniecznością tworzenia oddzielnego interpretera dla każdego procesu, lecz jest najprostsza w implementacji oraz wymaga niewiele dodatkowego kodu.
+CPU-Bound
+Wersja synchroniczna - CPU Bound - 9.576741695404053 sekund
+Wersja asynchroniczna z wieloma procesorami - 6.002724647521973 sekund
+
+Zdjęcia
+Synchronicznie: 94.4830892086029s
+Asynchronicznie - multithreading: 21.02152729034424s
+Asynchronicznie - multiprocessing: 24.93849229812622s
+Asynchronicznie - biblioteka Asyncio: 9.84400463104248s
+
+
